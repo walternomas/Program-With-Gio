@@ -1,5 +1,12 @@
 <?php
+  // Define a variable to hold the name
   $name = "Gio";
+
+  # This is a simple PHP program that demonstrates how to use variables and output them in HTML.
+  /*
+    The program defines a variable called $name and assigns it the value "Gio".
+    It then outputs an HTML page that includes the value of the $name variable in the title and body.
+  */
 ?>
 <!DOCTYPE html>
 <html lang="en">
