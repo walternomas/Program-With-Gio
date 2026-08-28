@@ -2,8 +2,13 @@
 
 // Constants
 
-define("FIRST_NAME", "Gio"); // Define a constant named FIRST_NAME with the value "Gio"
+define('STATUS_PAID', 'paid'); // Define a constant named STATUS_PAID with the value "paid"
 
-// FIRST_NAME = "Joe"; // This will cause an error because constants cannot be redefined
+echo defined('STATUS_PAID'); // Output: 1 (true, since the constant is defined)
 
-echo FIRST_NAME; // Output: Gio
+echo STATUS_PAID; // Output: paid
+
+if (true) {
+  // const FOO = 'bar'; // Error: Constants cannot be defined inside a conditional statement in PHP
+  define('STATUS_PENDING', 'pending'); 
+}
