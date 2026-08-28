@@ -23,3 +23,19 @@ echo PHP_VERSION . '<br>'; // Output: The current PHP version (e.g., 8.0.3)
 
 // Magic Constants
 echo __LINE__ . '<br>'; // Output: The current line number in the file (e.g., 12)
+
+// Variable Variables
+
+$foo = 'bar'; // Define a variable $foo with the value 'bar'
+
+$$foo = 'baz'; // Define a variable with the name stored in $foo (i.e., $bar) and assign it the value 'baz'
+
+echo $bar . '<br>'; // Output: baz
+
+echo "$foo , $$foo"; // Output: bar , $bar
+echo "<br>";
+
+echo "$foo , ${$foo}"; // Output: bar , baz
+echo "<br>";
+
+echo "$foo , {$$foo}"; // Output: bar , baz
